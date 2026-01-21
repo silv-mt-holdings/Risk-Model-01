@@ -8,7 +8,12 @@
       "Bash(for toolkit in bankstatement-parser-toolkit transaction-classifier-toolkit cashflow-analytics-toolkit rbf-position-tracker-toolkit rbf-scoring-toolkit rbf-pricing-toolkit)",
       "Bash(do mkdir -p \"$toolkit/.github\")",
       "Bash(tree:*)",
-      "Bash(deno:*)"
+      "Bash(deno:*)",
+      "Bash(find:*)",
+      "Bash(do echo \"=== $toolkit ===\" find \"C:/Dev/Trusted/$toolkit\" -name \"*.py\" -type f)",
+      "Bash(cat:*)",
+      "Bash(dir C:DevTrustedrbf-scoring-toolkitscoring)",
+      "Bash(xargs basename:*)"
     ],
     "deny": [],
     "ask": []
