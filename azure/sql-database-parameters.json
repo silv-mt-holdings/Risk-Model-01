@@ -1,0 +1,233 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "serverName": {
+            "value": "rbf-brain-server"
+        },
+        "databaseName": {
+            "value": "RBF_Brain"
+        },
+        "location": {
+            "value": "eastus"
+        },
+        "administratorLogin": {
+            "value": "sqladmin"
+        },
+        "administratorLoginPassword": {
+            "value": "YourStrong@Password123!"
+        },
+        "collation": {
+            "value": "SQL_Latin1_General_CP1_CI_AS"
+        },
+        "tier": {
+            "value": "Basic"
+        },
+        "skuName": {
+            "value": "Basic"
+        },
+        "maxSizeBytes": {
+            "value": 2147483648
+        },
+        "allowAzureIps": {
+            "value": true
+        },
+        "allowClientIp": {
+            "value": true
+        },
+        "clientIpRuleName": {
+            "value": "AllowMyIP"
+        },
+        "clientIpValue": {
+            "value": "YOUR_IP_HERE"
+        },
+        "publicNetworkAccess": {
+            "value": "Enabled"
+        },
+        "requestedBackupStorageRedundancy": {
+            "value": "Local"
+        },
+        "enableADS": {
+            "value": false
+        },
+        "enableVA": {
+            "value": false
+        },
+        "vaStoragelessEnabled": {
+            "value": false
+        },
+        "enablePrivateEndpoint": {
+            "value": false
+        },
+        "enableSqlLedger": {
+            "value": false
+        },
+        "useFreeLimit": {
+            "value": false
+        },
+        "zoneRedundant": {
+            "value": false
+        },
+        "autoPauseDelay": {
+            "value": 0
+        },
+        "minCapacity": {
+            "value": ""
+        },
+        "sampleName": {
+            "value": ""
+        },
+        "licenseType": {
+            "value": ""
+        },
+        "readScaleOut": {
+            "value": "Disabled"
+        },
+        "numberOfReplicas": {
+            "value": 0
+        },
+        "minimalTlsVersion": {
+            "value": "1.2"
+        },
+        "connectionType": {
+            "value": "Default"
+        },
+        "availabilityZone": {
+            "value": "NoPreference"
+        },
+        "freeLimitExhaustionBehavior": {
+            "value": "BillOverUsage"
+        },
+        "maintenanceConfigurationId": {
+            "value": ""
+        },
+        "keyId": {
+            "value": ""
+        },
+        "primaryUserAssignedIdentityId": {
+            "value": ""
+        },
+        "federatedClientId": {
+            "value": ""
+        },
+        "identity": {
+            "value": {
+                "type": "SystemAssigned"
+            }
+        },
+        "administrators": {
+            "value": {}
+        },
+        "databaseTags": {
+            "value": {
+                "Project": "RBF-Brain",
+                "Environment": "Production"
+            }
+        },
+        "serverTags": {
+            "value": {
+                "Project": "RBF-Brain",
+                "Environment": "Production"
+            }
+        },
+        "servicePrincipal": {
+            "value": {}
+        },
+        "enableDigestStorage": {
+            "value": "Disabled"
+        },
+        "digestStorageOption": {
+            "value": ""
+        },
+        "digestStorageName": {
+            "value": ""
+        },
+        "blobStorageContainerName": {
+            "value": ""
+        },
+        "retentionDays": {
+            "value": ""
+        },
+        "retentionPolicy": {
+            "value": false
+        },
+        "digestAccountResourceGroup": {
+            "value": ""
+        },
+        "digestRegion": {
+            "value": ""
+        },
+        "storageAccountdigestRegion": {
+            "value": ""
+        },
+        "isNewDigestLocation": {
+            "value": false
+        },
+        "isPermissionAssigned": {
+            "value": false
+        },
+        "sqlLedgerTemplateLink": {
+            "value": ""
+        },
+        "privateEndpointNestedTemplateId": {
+            "value": ""
+        },
+        "privateEndpointSubscriptionId": {
+            "value": ""
+        },
+        "privateEndpointResourceGroup": {
+            "value": ""
+        },
+        "privateEndpointName": {
+            "value": ""
+        },
+        "privateEndpointLocation": {
+            "value": ""
+        },
+        "privateEndpointSubnetId": {
+            "value": ""
+        },
+        "privateLinkServiceName": {
+            "value": ""
+        },
+        "privateLinkServiceServiceId": {
+            "value": ""
+        },
+        "privateEndpointVnetSubscriptionId": {
+            "value": ""
+        },
+        "privateEndpointVnetResourceGroup": {
+            "value": ""
+        },
+        "privateEndpointVnetName": {
+            "value": ""
+        },
+        "privateEndpointSubnetName": {
+            "value": ""
+        },
+        "enablePrivateDnsZone": {
+            "value": false
+        },
+        "privateLinkPrivateDnsZoneFQDN": {
+            "value": ""
+        },
+        "privateLinkPrivateDnsZoneRG": {
+            "value": ""
+        },
+        "privateEndpointDnsRecordUniqueId": {
+            "value": ""
+        },
+        "privateEndpointTemplateLink": {
+            "value": ""
+        },
+        "privateDnsForPrivateEndpointTemplateLink": {
+            "value": ""
+        },
+        "privateDnsForPrivateEndpointNicTemplateLink": {
+            "value": ""
+        },
+        "privateDnsForPrivateEndpointIpConfigTemplateLink": {
+            "value": ""
+        }
+    }
+}
