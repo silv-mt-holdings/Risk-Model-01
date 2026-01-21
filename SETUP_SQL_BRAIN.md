@@ -7,7 +7,7 @@ Your pricing data and industry segmentation data is now ready to migrate to a **
 ### Files Created ✅
 
 | File | Purpose |
-|------|---------|
+| ---- | ------- |
 | `DATA_MIGRATION_PLAN.md` | Complete data mapping strategy |
 | `mssql/schema.sql` | Database schema (10 tables) |
 | `mssql/seed_data.sql` | Seed all pricing/industry data |
@@ -56,6 +56,7 @@ MSSQL_CONNECTION_STRING=Server=localhost;Database=RBF_Brain;User=sa;Password=You
 ## What Gets Stored in SQL
 
 ### Configuration Tables (Read at Runtime)
+
 - **industries** - 25+ industries with tier, score, SIC codes
 - **pricing_factors** - 13 letter grades with factor rates, max advance %
 - **letter_grades** - Grade thresholds (A=80-100, B=65-79, etc.)
@@ -63,6 +64,7 @@ MSSQL_CONNECTION_STRING=Server=localhost;Database=RBF_Brain;User=sa;Password=You
 - **deal_tiers** - Deal sizing (Micro, Small, Mid, Large, Jumbo)
 
 ### Transaction Tables (Written by API)
+
 - **applications** - Every deal processed (business, score, pricing)
 - **violations** - Violation checks per deal (NSF, TIB, Industry Risk, etc.)
 
@@ -71,7 +73,7 @@ MSSQL_CONNECTION_STRING=Server=localhost;Database=RBF_Brain;User=sa;Password=You
 ## Benefits of SQL Brain
 
 | Benefit | Example |
-|---------|---------|
+| ------- | ------- |
 | **Dynamic Updates** | Change pricing without code deploy |
 | **Audit Trail** | Who changed factor rate from 1.15 to 1.18, when? |
 | **Multi-Tenant** | Different pricing by region/product |
@@ -137,7 +139,7 @@ async def analyze_statement(...):
 The SQL brain is **ready** but not yet **activated**. Here's what remains:
 
 | Data File | Status | Next Action |
-|-----------|--------|-------------|
+| --------- | ------ | ----------- |
 | `industry_risk_db.json` | ✅ Seeded to SQL | ⏭️ Delete after testing |
 | `letter_grade_thresholds.json` | ✅ Seeded to SQL | ⏭️ Delete after testing |
 | `scoring_weights.json` | ✅ Seeded to SQL | ⏭️ Delete after testing |
@@ -151,6 +153,7 @@ The SQL brain is **ready** but not yet **activated**. Here's what remains:
 ## Next Steps
 
 1. **Create SQL Database** ⬅️ **START HERE**
+
    ```sql
    CREATE DATABASE RBF_Brain;
    ```
@@ -160,6 +163,7 @@ The SQL brain is **ready** but not yet **activated**. Here's what remains:
    - Execute `mssql/seed_data.sql`
 
 3. **Test Connection**
+
    ```python
    from integrations.mssql import check_database_health
    print(check_database_health())
