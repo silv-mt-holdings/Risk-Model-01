@@ -14,7 +14,9 @@
       "Bash(cat:*)",
       "Bash(dir C:DevTrustedrbf-scoring-toolkitscoring)",
       "Bash(xargs basename:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(../mssql/insert_archive_naics.sql)",
+      "Bash(test:*)"
     ],
     "deny": [],
     "ask": []
